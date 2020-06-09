@@ -1,7 +1,8 @@
-import Layout  from '../components/layout';
-import Pagination from '../components/Pagination/Pagination';
 import PropTypes from "prop-types";
 import React from 'react';
+import Bio from '../components/Bio';
+import Layout  from '../components/layout';
+import Pagination from '../components/Pagination';
 import SEO from '../components/seo';
 import { graphql, Link } from 'gatsby';
 
@@ -12,29 +13,34 @@ const BlogIndex = ({
 
   return (
     <Layout>
-      <SEO title={ title }></SEO>
-      <section className="posts">
-        {edges.map(({ node }) => {
-          const { date,  title } = node.frontmatter;
-          const { slug } = node.fields;
+      <SEO title={ title } />
+      <div className="flex flex-wrap pt-4 my-8">
+        <Bio />
+        <div className="w-full lg:w-2/3 lg:pl-8 xl:pl-12">
+          <section>
+            {edges.map(({ node }) => {
+              const { date,  title } = node.frontmatter;
+              const { slug } = node.fields;
 
-          return (
-            <article key={ node.id }>
-              <header>
-                <h2>
-                  <Link to={ slug }>{ title }</Link>
-                </h2>
-                <time>{ date }</time>
-              </header>
-              <p>{ node.excerpt }</p>
-            </article>
-          );
-        })}
-      </section>
-      <Pagination
-        currentPage={ currentPage }
-        numPages={ numPages }
-      />
+              return (
+                <article key={ node.id } className="mb-8">
+                  <header>
+                    <h2 className="font-black font-header text-front text-3xl">
+                      <Link to={ slug }>{ title }</Link>
+                    </h2>
+                    <time>{ date }</time>
+                  </header>
+                  <p>{ node.excerpt }</p>
+                </article>
+              );
+            })}
+          </section>
+          <Pagination
+            currentPage={ currentPage }
+            numPages={ numPages }
+          />
+        </div>
+      </div>
     </Layout>
   );
 };

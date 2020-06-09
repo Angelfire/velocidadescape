@@ -2,7 +2,7 @@ const siteMetadata = {
   author: `Andrés Bedoya`,
   description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
   siteUrl: `https://gecken.co`,
-  title: `Gecken`,
+  title: `Velocidad de Escape`,
 };
 
 const plugins = [
@@ -33,6 +33,15 @@ const plugins = [
         },
       ],
     }
+  },
+  {
+    resolve: `gatsby-plugin-postcss`,
+    options: {
+      postCssPlugins: [
+        require("tailwindcss"),
+        require("./tailwind.config.js"),
+      ],
+    },
   },
   `gatsby-transformer-sharp`,
   `gatsby-plugin-sharp`,
