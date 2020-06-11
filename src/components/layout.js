@@ -16,11 +16,11 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
+    <div className="bg-primary h-screen">
       <Header siteTitle={data.site.siteMetadata.title} />
       <CustomFonts />
       <main className="container mx-auto">{children}</main>
-    </>
+    </div>
   )
 }
 

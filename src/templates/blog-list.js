@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 import { graphql, Link } from 'gatsby';
 
 const BlogIndex = ({ 
-  pageContext: { currentPage, numPages },
+  pageContext: { currentPage, limit, numPages, numPosts },
   data: { allMarkdownRemark: { edges }, site: { siteMetadata: { title } }}
 }) => {
 
@@ -37,7 +37,9 @@ const BlogIndex = ({
           </section>
           <Pagination
             currentPage={ currentPage }
+            limit={ limit }
             numPages={ numPages }
+            numPosts={ numPosts }
           />
         </div>
       </div>

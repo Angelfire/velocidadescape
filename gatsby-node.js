@@ -51,7 +51,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   };
 
   const posts = data.allMarkdownRemark.edges;
-  const postsPerPage = 9;
+  const postsPerPage = 2;
   const numPages = Math.ceil(posts.length / postsPerPage);
 
   posts.forEach((post, index) => {
@@ -80,6 +80,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         currentPage: i + 1,
         limit: postsPerPage,
         numPages,
+        numPosts: posts.length,
         skip: i * postsPerPage,
       },
     });
