@@ -4,36 +4,40 @@ import React from 'react';
 import SEO from '../components/seo';
 import { Link } from "gatsby";
 
-const BlogPostTemplate = ({ pageContext: { frontmatter, html, next, previous } }) => {
+const BlogPostTemplate = ({ pageContext: { frontmatter, html, next, previous }, location }) => {
   const { date, description, title } = frontmatter;
   const postDate = new Date(date).toDateString();
 
   return (
-    <Layout>
+    <Layout location={ location }>
       <SEO title={title} description={description} />
-      <div className="blog-post">
-        <h1 className="blog-post__title">{ title }</h1>
-        <time>{ postDate }</time>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
-      <div className="pagination">
-        <ul>
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </div>
+      <article className="container px-64">
+        <div className="blog-post">
+          <header className="mb-4">
+            <h1 className="font-black font-header text-4xl">{ title }</h1>
+            <time className="font-text text-xs">{ postDate }</time>
+          </header>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
+        <div className="my-8">
+          <ul className="flex justify-between">
+            <li>
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </div>
+      </article>
     </Layout>
   );
 };

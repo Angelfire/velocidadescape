@@ -9,23 +9,25 @@ const Pagination = ({ currentPage, limit, numPages, numPosts  }) => {
   const nextPage = currentPage + 1;
 
   return (
-    <ul className="pagination">
+    <ul className="flex">
       {!isFirst && (
         <Link to={`/${prevPage}`} rel="prev">
           ← Previous Page
         </Link>
       )}
       {numPosts > limit && Array.from({ length: numPages }, (_, i) => (
-        <li className="pagination__item" key={`pagination-number${i + 1}`}>
+        <li className="pr-4" key={`pagination-number${i + 1}`}>
           <Link to={`/${i === 0 ? '' : i + 1}`}>
             {i + 1}
           </Link>
         </li>
       ))}
       {!isLast && (
-        <Link to={`/${nextPage}`} rel="next">
-          Next Page →
-        </Link>
+        <li>
+          <Link to={`/${nextPage}`} rel="next">
+            Next Page →
+          </Link>
+        </li>
       )}
     </ul>
   );

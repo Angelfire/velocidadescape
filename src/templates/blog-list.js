@@ -8,39 +8,42 @@ import { graphql, Link } from 'gatsby';
 
 const BlogIndex = ({ 
   pageContext: { currentPage, limit, numPages, numPosts },
-  data: { allMarkdownRemark: { edges }, site: { siteMetadata: { title } }}
+  data: { allMarkdownRemark: { edges }, site: { siteMetadata: { title } }},
+  location
 }) => {
 
   return (
-    <Layout>
+    <Layout location={ location }>
       <SEO title={ title } />
-      <div className="flex flex-wrap pt-4 my-8">
-        <Bio />
-        <div className="w-full lg:w-2/3 lg:pl-8 xl:pl-12">
-          <section>
-            {edges.map(({ node }) => {
-              const { date,  title } = node.frontmatter;
-              const { slug } = node.fields;
+      <div className="container">
+        <div className="flex flex-wrap pt-4 my-8">
+          <Bio />
+          <div className="w-full lg:w-2/3 lg:pl-8 xl:pl-12">
+            <section>
+              {edges.map(({ node }) => {
+                const { date,  title } = node.frontmatter;
+                const { slug } = node.fields;
 
-              return (
-                <article key={ node.id } className="mb-8">
-                  <header>
-                    <h2 className="font-black font-header text-front text-3xl">
-                      <Link to={ slug }>{ title }</Link>
-                    </h2>
-                    <time>{ date }</time>
-                  </header>
-                  <p>{ node.excerpt }</p>
-                </article>
-              );
-            })}
-          </section>
-          <Pagination
-            currentPage={ currentPage }
-            limit={ limit }
-            numPages={ numPages }
-            numPosts={ numPosts }
-          />
+                return (
+                  <article key={ node.id } className="mb-8">
+                    <header className="mb-4">
+                      <h2 className="font-black font-header text-3xl">
+                        <Link to={ slug }>{ title }</Link>
+                      </h2>
+                      <time className="font-text text-xs">{ date }</time>
+                    </header>
+                    <p className="font-text">{ node.excerpt }</p>
+                  </article>
+                );
+              })}
+            </section>
+            <Pagination
+              currentPage={ currentPage }
+              limit={ limit }
+              numPages={ numPages }
+              numPosts={ numPosts }
+            />
+          </div>
         </div>
       </div>
     </Layout>

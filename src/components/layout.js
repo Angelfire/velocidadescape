@@ -4,7 +4,7 @@ import CustomFonts from '../components/CustomFonts';
 import Header from "./header";
 import { useStaticQuery, graphql } from "gatsby";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -16,11 +16,14 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div className="bg-primary h-screen">
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <>
+      <Header
+        location={ location }
+        siteTitle={ data.site.siteMetadata.title }
+      />
       <CustomFonts />
-      <main className="container mx-auto">{children}</main>
-    </div>
+      <main>{children}</main>
+    </>
   )
 }
 

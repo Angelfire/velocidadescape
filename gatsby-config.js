@@ -1,9 +1,11 @@
 const siteMetadata = {
   author: `Andrés Bedoya`,
-  description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-  siteUrl: `https://gecken.co`,
+  description: `Personal blog by Andrés Bedoya. I just want to share some personal things and others related to the headaches that programming produces.`,
+  siteUrl: `https://velocidadescape.com`,
   title: `Velocidad de Escape`,
 };
+
+const pathPrefix = '/'; 
 
 const plugins = [
   `gatsby-plugin-react-helmet`,
@@ -26,13 +28,32 @@ const plugins = [
     options: {
       plugins: [
         {
-          resolve: 'gatsby-remark-prismjs',
+          resolve: `gatsby-remark-prismjs`,
           options: {
             inlineCodeMarker: '÷',
           },
         },
+        {
+          resolve: `gatsby-remark-classes`,
+          options: {
+            classMap: {
+              "heading[depth=2]": "font-black font-header text-3xl",
+              "heading[depth=3]": "font-black font-header text-2xl",
+              "list[ordered=true]": "list-decimal pl-8",
+              "list[ordered=false]": "list-disc pl-8",
+              blockquote: "border-gray-900 border-l-4 italic mx-5 my-6 pl-4",
+              paragraph: "font-text mb-6",
+            }
+          },
+        },
       ],
     }
+  },
+  {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: `UA-169741674-1`,
+    },
   },
   {
     resolve: `gatsby-plugin-postcss`,
@@ -57,9 +78,66 @@ const plugins = [
       icon: `src/images/gatsby-icon.png`,
     },
   },
+  {
+    resolve: `gatsby-plugin-feed`,
+    options: {
+      query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              site_url: siteUrl
+            }
+          }
+        }
+      `,
+      feeds: [
+        {
+          serialize: ({ query: { site, allMarkdownRemark } }) => {
+            return allMarkdownRemark.edges.map(edge => {
+              return Object.assign({}, edge.node.frontmatter, {
+                description: edge.node.frontmatter.description,
+                date: edge.node.frontmatter.date,
+                url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                custom_elements: [{ "content:encoded": edge.node.html }],
+              })
+            })
+          },
+          query: `
+            {
+              allMarkdownRemark(
+                sort: { order: DESC, fields: [frontmatter___date] },
+              ) {
+                edges {
+                  node {
+                    excerpt(pruneLength: 250)
+                    html
+                    fields {
+                      slug 
+                    }
+                    frontmatter {
+                      title
+                      date
+                      description
+                    }
+                  }
+                }
+              }
+            }
+          `,
+          output: "/rss.xml",
+          title: "Velocidad de Escape RSS Feed",
+        },
+      ],
+    },
+  },
 ];
 
 module.exports = {
   siteMetadata,
+  pathPrefix,
   plugins
 };
