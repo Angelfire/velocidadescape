@@ -22,7 +22,7 @@ _You **can** combine them_
 * Item 3
 * Item 4
 
-[GitHub](http://github.com)
+Once we learn how to create [abstractions](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction), it is tempting to get high on that ability, and pull abstractions out of thin air whenever we see repetitive code. After a few years of coding, we see repetition *everywhere* -- and abstracting is our new superpower. If someone tells us that abstraction is a *virtue*, we'll eat it. And we'll start judging other people for not worshipping "cleanliness".
 
 1. First item
 2. Second item
@@ -32,6 +32,10 @@ _You **can** combine them_
 As Kanye West said:
 
 > Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+
+[alpha](https://example.com "bravo")
+
 
 ```javascript
 function fancyAlert(arg) {

@@ -42,6 +42,7 @@ const plugins = [
               "list[ordered=true]": "list-decimal pl-8",
               "list[ordered=false]": "list-disc pl-8",
               blockquote: "border-gray-900 border-l-4 italic mx-5 my-6 pl-4",
+              link: "bg-yellow p-1",
               paragraph: "font-text mb-6",
             }
           },
