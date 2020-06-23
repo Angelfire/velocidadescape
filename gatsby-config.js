@@ -130,7 +130,7 @@ const plugins = [
             }
           `,
           output: "/rss.xml",
-          title: "Velocidad de Escape RSS Feed",
+          title: "Andrés Bedoya - Velocidad de Escape RSS Feed",
         },
       ],
     },

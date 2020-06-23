@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedinIn, FaMapMarkerAlt } from "react-icons/fa"
+import { FaGithub, FaLinkedinIn, FaMapMarkerAlt, FaRss} from "react-icons/fa"
 
 const Bio = () => {
   return (
@@ -40,6 +40,15 @@ const Bio = () => {
           target="_blank"
         >
           <FaLinkedinIn className="h-6 w-6" />
+        </a>
+        <a
+          aria-label=""
+          className="bg-black h-12 inline-flex items-center justify-center -m-1 rounded-full text-white w-12"
+          href="http://velocidadescape.com/rss.xml"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <FaRss className="h-6 w-6" />
         </a>
       </footer>
     </aside>
