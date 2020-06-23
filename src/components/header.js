@@ -6,8 +6,8 @@ const Header = ({ location, siteTitle }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
 
   return (
-    <header>
-      <div className="p-4">
+    <header className="flex items-center p-4 lg:px-8 justify-between">
+      <div>
         { location.pathname === rootPath
           ? <h1>
               <Link to="/">
@@ -23,6 +23,14 @@ const Header = ({ location, siteTitle }) => {
             </h2>
         }
       </div>
+      <a
+        className="bg-yellow px-4 py-1 rounded-full"
+        href="https://gecken.co/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        About me
+      </a>
     </header>
   );
 };

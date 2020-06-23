@@ -2,7 +2,7 @@
 slug: "/my-third-post"
 date: "2020-06-07"
 title: "My third blog post"
-description: "Just a Simple description with full pagination"
+description: "Third blog post description"
 author: "Andres Bedoya"
 tags: ["javascript"]
 ---

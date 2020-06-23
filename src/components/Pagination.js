@@ -11,12 +11,14 @@ const Pagination = ({ currentPage, limit, numPages, numPosts  }) => {
   return (
     <ul className="flex">
       {!isFirst && (
-        <Link className="bg-yellow p-3" to={`/${prevPage}`} rel="prev">
-          ← Previous Page
-        </Link>
+        <li className="mr-4">
+          <Link className="bg-yellow p-3" to={`/${prevPage}`} rel="prev">
+            ← Previous Page
+          </Link>
+        </li>
       )}
       {numPosts > limit && Array.from({ length: numPages }, (_, i) => (
-        <li className="pr-4" key={`pagination-number${i + 1}`}>
+        <li className="mr-4" key={`pagination-number${i + 1}`}>
           <Link className="bg-yellow p-3" to={`/${i === 0 ? '' : i + 1}`}>
             {i + 1}
           </Link>
