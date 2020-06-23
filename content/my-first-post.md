@@ -27,6 +27,8 @@ I decided to create a blog using [Gatsby](https://www.gatsbyjs.org/) (I also use
 
 My idea is to continue sharing knowledge with the world, now I am a web developer with little more than 9 years of experience, but I have never lost the spirit of blogger and curiosity.
 
+If you want to know a little more about me, you can visit my personal website [Gecken](https://gecken.co/).
+
 *My English is quite bad and I usually make terrible mistakes, sorry, I will try to improve.*
 
 **GEEK THE PLANET**

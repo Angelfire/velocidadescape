@@ -70,13 +70,13 @@ const plugins = [
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `Gecken`,
-      short_name: `Gecken`,
+      name: `Velocidad de Escape`,
+      short_name: `VE`,
       start_url: `/`,
-      background_color: `#663399`,
+      background_color: `#e8eaef`,
       theme_color: `#663399`,
       display: `minimal-ui`,
-      icon: `src/images/gatsby-icon.png`,
+      icon: `src/images/ve-icon.png`,
     },
   },
   {
