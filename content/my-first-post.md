@@ -1,6 +1,6 @@
 ---
 slug: "/my-first-post"
-date: "2020-06-23"
+date: "2020-06-24"
 title: "My first blog post"
 description: "My first blog post in Velocidad de Escape"
 author: "Andres Bedoya"
@@ -32,4 +32,5 @@ If you want to know a little more about me, you can visit my personal website [G
 *My English is quite bad and I usually make terrible mistakes, sorry, I will try to improve.*
 
 **GEEK THE PLANET**
-Sr. Hart (A.K.A. Angelfire)
+
+_Sr. Hart (A.K.A. Angelfire)_
