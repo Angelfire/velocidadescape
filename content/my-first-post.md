@@ -15,7 +15,7 @@ Running a Linux distribution on my computer was tremendously complex (I remember
 
 At some point I realized and knew that many more people had the same problems as me, so I decided to start writing about these problems along with the solution.
 
-In the first years my blog had 500-1000 unique visits per month, I felt like a winner, but then the blog started to become more and more popular, my posts were more and more frequent, in my country many people knew me as a technological reference, many companies invited me to many events, my blog had 10,000-15,000 unique visitors per month, it was crazy.
+In the first years my blog had 500-1000 unique visits per month, I felt like a winner, but then the blog started to become more and more popular, my posts were more and more frequent, in my country many people knew me as a technological reference, many companies invited me to many events, my blog had 10,000-15,000 unique visitors per day, it was crazy.
 
 I met many important people, **Jon "Maddog" Hall**, **Michio Kaku**, **Kevin Mitnick**, **Steve Wozniak**, **Neil Harbisson**... I do not know if they can imagine how incredible it was.
 
@@ -23,7 +23,7 @@ For many years my blog went from being a hobby to being a job, the blog was mone
 
 My last publication was on March 14, 2017, I was already a computer and systems engineer, I already had a job, I met beer and I never published again...
 
-I decided to create a blog using [Gatsby](https://www.gatsbyjs.org/) (I also use [tailwindcss](https://tailwindcss.com/) for the first time), very complex to create it from scratch, but I wanted to live the experience of understanding how this open source framework works well to create websites.
+I decided to create a blog using [Gatsby](https://www.gatsbyjs.org/) (I also use [tailwindcss](https://tailwindcss.com/) for the first time), very complex to create it from scratch, but I wanted to live the experience of understanding how this open source framework works well to create websites. This blog still has a lot of errors (the design is quite minimalist), it is not responsive. If you find something you would like me to improve I would like you to let me know, I would be really grateful.
 
 My idea is to continue sharing knowledge with the world, now I am a web developer with little more than 9 years of experience, but I have never lost the spirit of blogger and curiosity.
 
@@ -32,3 +32,4 @@ If you want to know a little more about me, you can visit my personal website [G
 *My English is quite bad and I usually make terrible mistakes, sorry, I will try to improve.*
 
 **GEEK THE PLANET**
+Sr. Hart (A.K.A. Angelfire)
