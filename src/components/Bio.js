@@ -24,29 +24,32 @@ const Bio = () => {
       </div>
       <footer className="flex">
         <a
-          aria-label=""
+          aria-label="Personal Github account"
           className="bg-black h-12 inline-flex items-center justify-center -m-1 rounded-full text-white w-12"
           href="https://github.com/angelfire"
           rel="noopener noreferrer"
           target="_blank"
+          title="Personal Github account"
         >
           <FaGithub className="h-6 w-6" />
         </a>
         <a
-          aria-label=""
+          aria-label="Linkedin account"
           className="bg-white h-12 inline-flex items-center justify-center -m-1 rounded-full w-12"
           href="https://www.linkedin.com/in/sabedoya/"
           rel="noopener noreferrer"
           target="_blank"
+          title="Linkedin account"
         >
           <FaLinkedinIn className="h-6 w-6" />
         </a>
         <a
-          aria-label=""
+          aria-label="Rss Feed for Velocidad de Escape"
           className="bg-black h-12 inline-flex items-center justify-center -m-1 rounded-full text-white w-12"
           href="http://velocidadescape.com/rss.xml"
           rel="noopener noreferrer"
           target="_blank"
+          title="Rss Feed for Velocidad de Escape"
         >
           <FaRss className="h-6 w-6" />
         </a>
