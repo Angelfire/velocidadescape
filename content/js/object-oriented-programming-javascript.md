@@ -64,6 +64,6 @@ newPerson.greeting(); // "Hello Andres"
 
 const newTeacher = new Teacher('SrHart', 53, 13579, 'Senior');
 newTeacher.teacherId = 24680;
-newTeacher.teacherId; //24680
+newTeacher.teacherId; // 24680
 newTeacher.greeting(); // "Hello SrHart"
 ```
