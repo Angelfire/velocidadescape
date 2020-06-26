@@ -1,9 +1,6 @@
 module.exports = {
   purge: ["./src/**/*.js"],
   theme: {
-    container: {
-      center: true,
-    },
     fontFamily: {
       header: ["Source Sans Pro", "sans-serif"],
       text: ["Roboto", "sans-serif"],

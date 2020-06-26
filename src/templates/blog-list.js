@@ -15,7 +15,7 @@ const BlogIndex = ({
   return (
     <Layout location={ location }>
       <SEO title={ title } />
-      <div className="container">
+      <div className="container mx-6 lg:mx-auto">
         <div className="flex flex-wrap pt-4 my-8">
           <Bio />
           <div className="w-full lg:w-2/3 lg:pl-8 xl:pl-12">
