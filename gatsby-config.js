@@ -33,6 +33,20 @@ const plugins = [
             inlineCodeMarker: '÷',
           },
         },
+        {
+          resolve: `gatsby-remark-classes`,
+          options: {
+            classMap: {
+              "heading[depth=2]": "font-black font-header text-3xl",
+              "heading[depth=3]": "font-black font-header text-2xl",
+              "list[ordered=true]": "list-decimal pl-8",
+              "list[ordered=false]": "list-disc pl-8",
+              "blockquote paragraph": "bg-gray-100 border-gray-900 border-l-4 italic mx-5 my-6 pl-4",
+              link: "bg-yellow hover:bg-transparent hover:text-black hover:underline",
+              paragraph: "font-text mb-6",
+            }
+          },
+        },
       ],
     }
   },
