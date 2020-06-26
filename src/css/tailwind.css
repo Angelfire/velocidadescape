@@ -22,7 +22,7 @@ body {
 }
 
 .markdown a {
-  @apply bg-yellow p-1;
+  @apply bg-yellow;
 }
 
 .markdown a:hover {
