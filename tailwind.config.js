@@ -10,6 +10,7 @@ module.exports = {
         'hover:text-black',
         'hover:underline',
         'italic',
+        'mx-8',
         'my-6',
         'pl-4',
       ]
