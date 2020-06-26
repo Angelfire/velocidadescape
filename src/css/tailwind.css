@@ -10,29 +10,3 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Markdown Styles */
-/* Markdown Global */
-.markdown h2 {
-  @apply font-black font-header text-3xl;
-}
-
-.markdown h3 {
-  @apply font-black font-header text-2xl;
-}
-
-.markdown a {
-  @apply bg-yellow;
-}
-
-.markdown a:hover {
-  @apply bg-transparent text-black underline;
-}
-
-.markdown blockquote {
-  @apply bg-gray-100 border-gray-900 border-l-4 italic mx-5 my-6 pl-4;
-}
-
-.markdown p {
-  @apply mb-4;
-}
