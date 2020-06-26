@@ -23,13 +23,13 @@ If you want to generate a "random" number using a computer and JavaScript, you c
 0.3802321554535415
 ```
 
-JavaScript always uses the same algorithm with the same seeds. The algorithm follows every time the same pattern to generate those numbers. And then you could think, then could you guess the next random number? My answer is: No. The pattern is complex enough to identify it. That's why we usually call them: *Pseudo-random* numbers.
+JavaScript always uses the same algorithm with the same seeds. The algorithm follows every time the same pattern to generate those numbers. And then you could think, could you guess the next random number? My answer is: No. The pattern is complex enough to identify it. So, that's why we usually call them: *Pseudo-random* numbers.
 
-So how can we generate true random numbers? using **quantum mechanics**. How? make measurements on something that behaves randomly and from there we can extract random numbers.
+How can we generate true random numbers? using **quantum mechanics**. How? make measurements on something that behaves randomly and from there we can extract random numbers.
 
-But, why this is important? Because we are software developers (some of us, I guess), and we don't want our applications to be hacked.
+But, why is this important? Because we are software developers (some of us, I guess), and we don't want our applications to be hacked.
 
-As Steve Ward (Professor of Computer Science and Engineering at MIT’s Computer Science and Artificial Intelligence Laboratory.) says:
+As Steve Ward (Professor of Computer Science and Engineering at MIT’s Computer Science and Artificial Intelligence Laboratory) says:
 
 > Truly random numbers make such reverse engineering impossible
 
