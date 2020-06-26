@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ pageContext: { frontmatter, html, next, previous }, 
             <h1 className="font-black font-header text-4xl">{ title }</h1>
             <time className="font-text text-xs">{ postDate }</time>
           </header>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
         <div className="my-8">
           <ul className="flex justify-between">
