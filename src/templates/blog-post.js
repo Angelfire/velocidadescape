@@ -6,16 +6,15 @@ import { Link } from "gatsby";
 
 const BlogPostTemplate = ({ pageContext: { frontmatter, html, next, previous }, location }) => {
   const { date, description, title } = frontmatter;
-  const postDate = new Date(date).toDateString();
 
   return (
     <Layout location={ location }>
-      <SEO title={title} description={description} />
+      <SEO title={ title } description={ description } />
       <article className="container mx-6 lg:mx-auto lg:px-64">
-        <div className="blog-post">
+        <div className="mb-24">
           <header className="mb-4">
             <h1 className="font-black font-header text-4xl">{ title }</h1>
-            <time className="font-text text-xs">{ postDate }</time>
+            <time className="font-text text-xs">{ date }</time>
           </header>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
@@ -23,15 +22,15 @@ const BlogPostTemplate = ({ pageContext: { frontmatter, html, next, previous }, 
           <ul className="flex justify-between">
             <li>
               {previous && (
-                <Link className="bg-yellow p-1" to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
+                <Link className="bg-yellow p-1" to={ previous.fields.slug } rel="prev">
+                  ← { previous.frontmatter.title }
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link className="bg-yellow p-1" to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
+                <Link className="bg-yellow p-1" to={ next.fields.slug } rel="next">
+                  { next.frontmatter.title } →
                 </Link>
               )}
             </li>
