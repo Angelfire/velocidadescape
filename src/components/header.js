@@ -24,7 +24,7 @@ const Header = ({ location, siteTitle }) => {
         }
       </div>
       <a
-        className="bg-yellow px-4 py-1 rounded-full"
+        className="bg-blue px-4 py-1 rounded-full text-white"
         href="https://gecken.co/"
         rel="noopener noreferrer"
         target="_blank"

@@ -13,7 +13,7 @@ const Bio = () => {
             Andrés Bedoya G.
           </h2>
           <div className="inline-flex items-center bg-front mt-6 w-auto">
-            <span className="bg-black text-yellow mr-1 pt-1 pb-1 px-2">
+            <span className="bg-blue text-white mr-1 pt-1 pb-1 px-2">
               <FaMapMarkerAlt className="h-6 w-6" />
             </span>
             <span className="bg-black text-white font-header font-bold py-1 px-3">
