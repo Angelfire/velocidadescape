@@ -34,6 +34,12 @@ const plugins = [
           },
         },
         {
+          resolve: `gatsby-remark-responsive-iframe`,
+          options: {
+            wrapperStyle: `margin-bottom: 1.0725rem`,
+          },
+        },
+        {
           resolve: `gatsby-remark-classes`,
           options: {
             classMap: {
@@ -65,8 +71,6 @@ const plugins = [
       ],
     },
   },
-  `gatsby-transformer-sharp`,
-  `gatsby-plugin-sharp`,
   {
     resolve: `gatsby-plugin-manifest`,
     options: {

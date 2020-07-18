@@ -15,7 +15,7 @@ A programming **paradigm** centered around **objects** rathen than functions.
 
 Mosh is one of the best tutors I have ever met, and I don't want to copy a ton of text, and I personally don't want to explain and transcribe a lot of content that can be better understood through a video.
 
-[![Object-oriented JavaScript](https://img.youtube.com/vi/PFmuCDHHpwk/0.jpg)](https://www.youtube.com/watch?v=PFmuCDHHpwk "Object-oriented JavaScript")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PFmuCDHHpwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Also, this is a very interesting resource in Medium:
 [A Guide to Object-Oriented Programming in JavaScript](https://medium.com/better-programming/object-oriented-programming-in-javascript-b3bda28d3e81) and of course this from Eric Ellioot [Master the JavaScript Interview: What’s the Difference Between Class & Prototypal Inheritance?](https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9).
