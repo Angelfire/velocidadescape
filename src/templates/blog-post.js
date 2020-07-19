@@ -10,7 +10,7 @@ const BlogPostTemplate = ({ pageContext: { frontmatter, html, next, previous }, 
   return (
     <Layout location={ location }>
       <SEO title={ title } description={ description } />
-      <article className="container mx-6 lg:mx-auto lg:px-64">
+      <article className="container mx-auto px-4 lg:px-64">
         <div className="mb-24">
           <header className="mb-4">
             <h1 className="font-black font-header text-4xl">{ title }</h1>
