@@ -21,7 +21,7 @@ const Bio = () => {
             </span>
           </div>
         </div>
-        <footer className="flex mb-12 sm:pt-6 lg:mb-0">
+        <footer className="flex mb-12 pt-6 lg:mb-0 lg:pt-0">
           <a
             aria-label="Personal Github account"
             className="bg-black h-12 inline-flex items-center justify-center -m-1 rounded-full text-white w-12"
