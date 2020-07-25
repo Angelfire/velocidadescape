@@ -2,9 +2,12 @@ import Layout  from '../components/layout';
 import PropTypes from "prop-types";
 import React from 'react';
 import SEO from '../components/seo';
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 
-const BlogPostTemplate = ({ pageContext: { frontmatter, html, next, previous }, location }) => {
+const BlogPostTemplate = ({
+  data: { markdownRemark: { frontmatter, html } },
+  pageContext: { next, previous }, location 
+}) => {
   const { date, description, title } = frontmatter;
 
   return (
@@ -46,3 +49,22 @@ BlogPostTemplate.propTypes = {
 };
 
 export default BlogPostTemplate;
+
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      html
+      frontmatter {
+        title
+        date(formatString: "MMMM DD, YYYY")
+        description
+      }
+    }
+  }
+`

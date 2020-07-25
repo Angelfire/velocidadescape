@@ -64,8 +64,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       path: `${post.node.fields.slug}`,
       component: slash(blogPost),
       context: {
-        frontmatter: post.node.frontmatter,
-        html: post.node.html,
         id: post.node.id,
         previous,
         next,
