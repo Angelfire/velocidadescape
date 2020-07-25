@@ -8,9 +8,12 @@ module.exports = {
         'bg-gray-100',
         'hover:no-underline',
         'italic',
+        'list-decimal',
+        'list-disc',
         'mx-8',
         'my-6',
         'pl-4',
+        'pl-8',
         'text-blue',
         'underline',
       ]
