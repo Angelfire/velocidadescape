@@ -1,5 +1,4 @@
 ---
-slug: "/my-first-post"
 date: "2020-06-23"
 title: "My first blog post"
 description: "My first blog post in Velocidad de Escape"

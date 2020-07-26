@@ -6,8 +6,8 @@ import ViewCounter from "../hooks/ViewCounter";
 import { graphql, Link } from "gatsby";
 
 const BlogPostTemplate = ({
-  data: { markdownRemark: { frontmatter, html } },
-  pageContext: { next, previous }, location 
+  data: { markdownRemark: { frontmatter, html }},
+  pageContext: { next, previous, id, slug }, location 
 }) => {
   const { date, description, title } = frontmatter;
 
@@ -20,7 +20,7 @@ const BlogPostTemplate = ({
             <h1 className="font-black font-header text-4xl">{ title }</h1>
             <div className="flex justify-between">
               <time className="font-text text-xs">{ date }</time>
-              <ViewCounter id="index" />
+              <ViewCounter id={ id } />
             </div>
           </header>
           <div dangerouslySetInnerHTML={{ __html: html }} />

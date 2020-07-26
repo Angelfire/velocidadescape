@@ -1,5 +1,4 @@
 ---
-slug: "/computer-generated-random-numbers"
 date: "2020-06-25"
 title: "Are computer generated random numbers really random?"
 description: "Are computer generated random numbers really random?"

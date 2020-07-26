@@ -1,5 +1,4 @@
 ---
-slug: "/styling-markdown-tailwind-gatsby"
 date: "2020-07-14"
 title: "Styling markdown posts with Tailwind CSS in GatsbyJS"
 description: "Styling markdown posts with Tailwind CSS in GatsbyJS"
