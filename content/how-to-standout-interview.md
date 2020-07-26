@@ -1,5 +1,4 @@
 ---
-slug: "/how-to-stand-out-interview"
 date: "2020-07-23"
 title: "How to Stand Out in an Interview"
 description: "How to Stand Out in an Interview, tips and more..."

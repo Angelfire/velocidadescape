@@ -1,5 +1,4 @@
 ---
-slug: "/object-oriented-programming-javascript"
 date: "2020-06-24"
 title: "Object-Oriented Programming in Javascript"
 description: "Is JavaScript really an object-oriented programming language?"

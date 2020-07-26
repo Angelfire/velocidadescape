@@ -1,5 +1,4 @@
 const path = require(`path`);
-const { slash } = require(`gatsby-core-utils`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({ node, getNode ,actions }) => {
@@ -62,7 +61,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     createPage({
       path: `${post.node.fields.slug}`,
-      component: slash(blogPost),
+      component: blogPost,
       context: {
         id: post.node.id,
         previous,
@@ -75,7 +74,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/` : `/${i + 1}`,
-      component: slash(blogList),
+      component: blogList,
       context: {
         currentPage: i + 1,
         limit: postsPerPage,
