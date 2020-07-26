@@ -1,2 +1,3 @@
 import "./src/css/tailwind.css";
-require("./src/css/prism.css");
+import "./src/css/prism.css";
+import "firebase/database";
