@@ -2,6 +2,7 @@ import Layout  from '../components/layout';
 import PropTypes from "prop-types";
 import React from 'react';
 import SEO from '../components/seo';
+import ViewCounter from "../hooks/ViewCounter";
 import { graphql, Link } from "gatsby";
 
 const BlogPostTemplate = ({
@@ -17,7 +18,10 @@ const BlogPostTemplate = ({
         <div className="mb-24">
           <header className="mb-4">
             <h1 className="font-black font-header text-4xl">{ title }</h1>
-            <time className="font-text text-xs">{ date }</time>
+            <div className="flex justify-between">
+              <time className="font-text text-xs">{ date }</time>
+              <ViewCounter id="index" />
+            </div>
           </header>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
