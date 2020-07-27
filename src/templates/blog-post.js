@@ -2,7 +2,7 @@ import Layout  from '../components/layout';
 import PropTypes from "prop-types";
 import React from 'react';
 import SEO from '../components/seo';
-import ViewCounter from "../hooks/ViewCounter";
+import ViewCounter from "../components/ViewCounter";
 import { graphql, Link } from "gatsby";
 
 const BlogPostTemplate = ({
