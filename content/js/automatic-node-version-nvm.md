@@ -1,6 +1,6 @@
 ---
 date: "2020-07-29"
-title: "Automatic Node version using NVM"
+title: "Automatic NodeJS version using NVM"
 description: "If you are using multiple versions of NodeJS you should use NVM"
 author: "Andres Bedoya"
 tags: ["JavaScript"]
