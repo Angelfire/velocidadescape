@@ -35,7 +35,7 @@ Now using node v14.5.0 (npm v6.14.5)
 
 ## Automatic switch
 
-When you `cd` into your project nvm automatically will detect your `.nvmrc` and will use your that NodeJS version.
+When you `cd` into your project nvm automatically will detect your `.nvmrc` and will use that NodeJS version.
 
 Put this into your `$HOME/.zshrc` to call `nvm use` automatically:
 
