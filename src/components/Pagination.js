@@ -19,7 +19,7 @@ const Pagination = ({ currentPage, limit, numPages, numPosts  }) => {
       )}
       {numPosts > limit && Array.from({ length: numPages }, (_, i) => (
         <li className="mr-4" key={`pagination-number${i + 1}`}>
-          <Link className="bg-blue p-3 text-white" to={`/${i === 0 ? '' : i + 1}`}>
+          <Link className="bg-blue p-3 text-white" activeClassName="opacity-50" to={`/${i === 0 ? '' : i + 1}`}>
             {i + 1}
           </Link>
         </li>
