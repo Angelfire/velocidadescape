@@ -6,7 +6,7 @@ author: "Andres Bedoya"
 tags: ["JavaScript"]
 ---
 
-If you have multiple projects in your computers, it's propably that all of them uses a different version of NodeJS. For this reason, there are packages like [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm) that allow you to do exactly that, handle different versions of NodeJS without too much extra configuration.
+If you have multiple projects in your computer, it's probable that all of them use a different version of NodeJS. For this reason, there are packages like [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm) that allow you to do exactly that, handle different versions of NodeJS without too much extra configuration.
 
 Its installation and use are tremendously basic, just need to run `nvm help` if you need more help.
 
