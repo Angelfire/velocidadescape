@@ -13,7 +13,7 @@ I had already seen some other blogs and knew that it was possible to create them
 Working with Tailwind CSS it's increible, but here I found my first big challenge, how can I add styles to my markdown if I can't add styles to my HTML elements?
 
 A little more context, when you want to add styles to an specific element you should do something like:
-```css
+```html
 <span className="border-solid border-2 border-black font-extrabold h-16 inline-flex items-center justify-center mr-4 rounded-full text-center w-16">VE</span>
 ```
 

@@ -1,11 +1,6 @@
 :root {
-  --color-primary: #e8eaef;
   --color-yellow: #eee841;
   --color-blue: #3273dc;
-}
-
-body {
-  @apply .bg-primary;
 }
 
 @tailwind base;
