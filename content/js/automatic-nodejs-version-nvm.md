@@ -14,8 +14,8 @@ In order to have a better organization, it is recommended to have a `.nvmrc` fil
 
 Its creation it's really easy:
 
-```zsh
-$ echo 14.5.0" > .nvmrc
+```shell
+$ echo "14.5.0" > .nvmrc
 
 $ echo "lts/*" > .nvmrc # to default to the latest LTS version
 
@@ -28,7 +28,7 @@ Now, there are 2 different ways to use this file:
 
 Go to you folder's project and run `nvm use`, you should see something like:
 
-```zsh
+```shell
 Found '/Users/srhart/Projects/project/.nvmrc' with version <14.5.0>
 Now using node v14.5.0 (npm v6.14.5)
 ```
@@ -39,7 +39,7 @@ When you `cd` into your project nvm automatically will detect your `.nvmrc` and 
 
 Put this into your `$HOME/.zshrc` to call `nvm use` automatically:
 
-```zsh
+```shell
 autoload -U add-zsh-hook
 load-nvmrc() {
   local node_version="$(nvm version)"
