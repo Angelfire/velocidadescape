@@ -46,6 +46,10 @@ const Parser = require('rss-parser');
 const getRSS = async(rssUrl) => {
   const feed = await parser.parseURL(rssUrl);
 
+  if (!feed.items) {
+    throw new Error('feed.items was not found!');
+  }
+
   return feed.items[0];
 }
 ```
@@ -55,6 +59,19 @@ This will be my dynamic content, but the possibilities are endless:
 ```js
   const lastPost = `- Read my latest blog post: [${feed.title}](${feed.link})`;
   const date = `Last update on ${today.toDateString()}`;
+```
+
+Write function:
+```js
+const { writeFile } = require('fs').promises;
+
+const writeMarkdown = async (mdFile, data) => {
+  try {
+    await writeFile(mdFile, data);
+  } catch(e) {
+    throw new Error('Failed to write file');
+  }
+}
 ```
 
 And finally, we are going to mix everything:
@@ -74,7 +91,7 @@ ${lastPost}
 
 ${date}`;
 
-  writeFile(filePathReadme, data);
+  await writeMarkdown(filePathReadme, data);
 }
 ```
 
