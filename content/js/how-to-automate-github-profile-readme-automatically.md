@@ -1,7 +1,7 @@
 ---
 date: "2020-08-01"
-title: "How to automate your Github Profile README automatically using NodeJS"
-description: "How to automate your Github Profile README automatically using NodeJS and Github actions"
+title: "How to update your Github Profile README automatically using NodeJS"
+description: "How to update your Github Profile README automatically using NodeJS and Github actions"
 author: "Andres Bedoya"
 tags: ["JavaScript"]
 ---
@@ -124,4 +124,4 @@ Finally, we push the updated files back to our repository:
 
 [Here is my repo](https://github.com/Angelfire/Angelfire), there you can find my NodeJS script and my Github Workflow.
 
-If you have any question, if you can help me with my script and my Github Action, please, dont' hesitate and let me know!.
+If you have any question, if you can help me with my script and my Github Action, please, don't hesitate and let me know!.
