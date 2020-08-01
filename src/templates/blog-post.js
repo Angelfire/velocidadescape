@@ -16,9 +16,9 @@ const BlogPostTemplate = ({
       <SEO title={ title } description={ description } />
       <article className="container mx-auto px-4 lg:px-64">
         <div className="mb-24">
-          <header className="mb-4">
-            <h1 className="font-black font-header text-4xl">{ title }</h1>
-            <div className="flex justify-between">
+          <header className="mb-8">
+            <h1 className="border-b border-gray-200 font-black font-header text-4xl">{ title }</h1>
+            <div className="flex justify-between pt-4">
               <time className="font-text text-xs">{ date }</time>
               <ViewCounter id={ slug } />
             </div>
