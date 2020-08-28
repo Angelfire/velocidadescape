@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedinIn, FaMapMarkerAlt, FaRss} from "react-icons/fa"
+import { FaGithub, FaLinkedinIn, FaMapMarkerAlt, FaRss} from 'react-icons/fa';
 
 const Bio = () => {
   return (

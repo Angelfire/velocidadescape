@@ -26,11 +26,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        yellow: 'var(--color-yellow)',
         blue: 'var(--color-blue)',
       },
     },
   },
   variants: {},
   plugins: [],
-}
+};
