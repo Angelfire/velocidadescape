@@ -1,5 +1,5 @@
 ---
-date: "2022-03-04"
+date: "2022-03-03"
 title: "Protected routes and authorization using React Router v6"
 description: "How to: Protect routes based on authorization using React Router v6"
 author: "Andres Bedoya"
