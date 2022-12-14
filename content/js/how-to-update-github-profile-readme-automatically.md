@@ -8,7 +8,7 @@ tags: ["JavaScript"]
 
 GitHub’s new profile page README feature was release a couple of weeks ago, and it's a great feature that allows you to personalize your profile in multiple ways, some quite creative.
 
-Markdown lends itself best to standard static text content, that's not a problem for creative people, like **Victoria Drake**, who automate her profile using GO, and this post is inspired by her post. [How to Automate Your GitHub Profile README](https://victoria.dev/blog/go-automate-your-github-profile-readme/).
+Markdown lends itself best to standard static text content, that's not a problem for creative people, like **Victoria Drake**, who automate her profile using GO, and this post is inspired by her post. <a class="hover:no-underline text-blue underline" href="https://victoria.dev/blog/go-automate-your-github-profile-readme/" target="_blank" rel="noopener noreferrer">How to Automate Your GitHub Profile README</a>.
 
 However, I am not a GO developer and I'm pretty bad at graphic design, so the first thing I thought was: If she could do it using a backend language, this should be friendlier using a frontend language, like JavaScript.
 
@@ -97,7 +97,7 @@ ${date}`;
 
 ## Running your NodeJS script on a schedule with Actions
 
-This is something new to me, but basically, you can create a GitHub Action workflow that [triggers](https://docs.github.com/en/actions/reference/events-that-trigger-workflows) both on a push to your master branch as well as on a daily schedule.
+This is something new to me, but basically, you can create a GitHub Action workflow that <a class="hover:no-underline text-blue underline" href="https://docs.github.com/en/actions/reference/events-that-trigger-workflows" target="_blank" rel="noopener noreferrer">triggers</a> both on a push to your master branch as well as on a daily schedule.
 
 The cronjob runs everyday at midnight (GMT -5)
 ```yml

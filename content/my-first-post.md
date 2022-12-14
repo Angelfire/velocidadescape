@@ -22,11 +22,11 @@ For many years my blog went from being a hobby to being a job, the blog was mone
 
 My last publication was on March 14, 2017, I was already a computer and systems engineer, I already had a job, I met beer and I never published again...
 
-I decided to create a blog using [Gatsby](https://www.gatsbyjs.org/) (I also use [tailwindcss](https://tailwindcss.com/) for the first time), very complex to create it from scratch, but I wanted to live the experience of understanding how this open source framework works well to create websites. This blog still has a lot of errors (the design is quite minimalist), it is not responsive. If you find something you would like me to improve I would like you to let me know, I would be really grateful.
+I decided to create a blog using <a class="hover:no-underline text-blue underline" href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">Gatsby</a> (I also use <a class="hover:no-underline text-blue underline" href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">Tailwindcss</a> for the first time), very complex to create it from scratch, but I wanted to live the experience of understanding how this open source framework works well to create websites. This blog still has a lot of errors (the design is quite minimalist), it is not responsive. If you find something you would like me to improve I would like you to let me know, I would be really grateful.
 
 My idea is to continue sharing knowledge with the world, now I am a web developer with little more than 9 years of experience, but I have never lost the spirit of blogger and curiosity.
 
-If you want to know a little more about me, you can visit my personal website [Gecken](https://gecken.co/).
+If you want to know a little more about me, you can visit my personal website [Sr.Hart](https://srhart.co/).
 
 *My English is quite bad and I usually make terrible mistakes, sorry, I will try to improve.*
 

@@ -36,6 +36,6 @@ This is only a brief introduction and gentle, the topic is much more complex tha
 
 Read more:
 
-[Can a computer generate a truly random number?](https://engineering.mit.edu/engage/ask-an-engineer/can-a-computer-generate-a-truly-random-number/)
+<a class="hover:no-underline text-blue underline" href="https://engineering.mit.edu/engage/ask-an-engineer/can-a-computer-generate-a-truly-random-number/" target="_blank" rel="noopener noreferrer">Can a computer generate a truly random number?</a>
 
-[What is a random number and why is it so difficult to generate them?](https://www.euronews.com/2019/07/29/what-is-a-random-number-and-why-is-it-so-difficult-to-generate-them)
+<a class="hover:no-underline text-blue underline" href="https://www.euronews.com/2019/07/29/what-is-a-random-number-and-why-is-it-so-difficult-to-generate-them" target="_blank" rel="noopener noreferrer">What is a random number and why is it so difficult to generate them?</a>

@@ -81,6 +81,6 @@ const operation = new Calculator(2)
 
 I don't know for sure how popular this pattern could be, but at least I found it quite interesting.
 
-[1] [FluenInterface](https://www.martinfowler.com/bliki/FluentInterface.html)
+[1] <a class="hover:no-underline text-blue underline" href="https://www.martinfowler.com/bliki/FluentInterface.html" target="_blank" rel="noopener noreferrer">FluenInterface</a>
 
-[this in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+<a class="hover:no-underline text-blue underline" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this" target="_blank" rel="noopener noreferrer">this in JavaScript</a>

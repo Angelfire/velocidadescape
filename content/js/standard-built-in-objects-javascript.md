@@ -8,7 +8,7 @@ tags: ["JavaScript"]
 
 > The term "global objects" (or standard built-in objects) here is not to be confused with the global object. Here, "global objects" refer to objects in the global scope.
 
-> The global object itself can be accessed using the this operator in the global scope. In fact, the global scope consists of the properties of the global object, including inherited properties, if any. [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#standard_objects_by_category)
+> The global object itself can be accessed using the this operator in the global scope. In fact, the global scope consists of the properties of the global object, including inherited properties, if any. <a class="hover:no-underline text-blue underline" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#standard_objects_by_category" target="_blank" rel="noopener noreferrer">Standard built-in objects</a>
 
 To begin with, this is confusing enough; my idea is not to confuse many more, it is simply to show you some of the global objects that come in the latest ECMAScript specification and that we see commonly.
 
@@ -16,16 +16,16 @@ The specification divides these global objects by categories as follows (I'm jus
 
 **Fundamental objects**
 
-- Object
+- `Object`
 
 **Indexed collections**
 
-- Array
+- `Array`
 
 **Keyed collections**
 
-- Map
-- Set
+- `Map`
+- `Set`
 
 Next I am going to show some versus between global objects that at first glance seem the same...
 

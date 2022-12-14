@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter",
+  "name": "velocidadescape",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal blog by Andrés Bedoya.",
   "version": "1.1.0",
   "author": "Andres Bedoya <bedoya.andres@pm.me>",
   "dependencies": {
