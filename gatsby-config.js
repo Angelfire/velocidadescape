@@ -146,5 +146,6 @@ module.exports = {
         icon: `src/images/ve-icon.png`,
       },
     },
+    'gatsby-plugin-netlify',
   ],
 }
