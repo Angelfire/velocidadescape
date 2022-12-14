@@ -2,7 +2,7 @@
   "name": "velocidad-de-escape",
   "private": true,
   "description": "Personal blog by Andrés Bedoya",
-  "version": "1.2.0",
+  "version": "2.0",
   "author": "Andres Bedoya <bedoya.andres@pm.me>",
   "dependencies": {
     "@fontsource/merriweather": "^4.5.14",
