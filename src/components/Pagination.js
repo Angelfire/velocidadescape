@@ -1,12 +1,11 @@
-import PropTypes from "prop-types";
-import React from 'react';
-import { Link } from 'gatsby';
+import * as React from 'react'
+import { Link } from 'gatsby'
 
 const Pagination = ({ currentPage, limit, numPages, numPosts  }) => {
-  const isFirst = currentPage === 1;
-  const isLast = currentPage === numPages;
-  const prevPage = currentPage - 1 === 1 ? '' : currentPage - 1;
-  const nextPage = currentPage + 1;
+  const isFirst = currentPage === 1
+  const isLast = currentPage === numPages
+  const prevPage = currentPage - 1 === 1 ? '' : currentPage - 1
+  const nextPage = currentPage + 1
 
   return (
     <ul className="flex">
@@ -33,13 +32,6 @@ const Pagination = ({ currentPage, limit, numPages, numPosts  }) => {
       )}
     </ul>
   );
-};
+}
 
-Pagination.propTypes = {
-  currentPage: PropTypes.number,
-  limit: PropTypes.number,
-  numPages: PropTypes.number,
-  numPosts: PropTypes.number,
-};
-
-export default Pagination;
+export default Pagination

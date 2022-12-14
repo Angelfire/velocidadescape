@@ -1,39 +1,18 @@
-import PropTypes from "prop-types";
-import React from "react";
-import CustomFonts from '../components/CustomFonts';
-import Header from "./header";
-import { useStaticQuery, graphql } from "gatsby";
+import * as React from 'react'
+import Footer from './Footer'
+import Header from './Header'
 
-const Layout = ({ children, location }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+const Layout = ({ location, title, children }) => {
+  const rootPath = `${__PATH_PREFIX__}/`
+  const isRootPath = location.pathname === rootPath
 
   return (
-    <>
-      <Header
-        location={ location }
-        siteTitle={ data.site.siteMetadata.title }
-      />
-      <CustomFonts />
+    <div data-is-root-path={isRootPath}>
+      <Header title={title} isRootPath={isRootPath} />
       <main>{children}</main>
-    </>
+      {isRootPath && <Footer /> }
+    </div>
   )
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-  location: PropTypes.object,
-};
-
-Layout.defaulProps = {
-  location: {},
-};
 
 export default Layout

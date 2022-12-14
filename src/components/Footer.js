@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from "react"
 
 const Footer = () => (
   <footer className="bg-gray-900 pt-8 pb-16">
@@ -7,6 +7,6 @@ const Footer = () => (
       <p className="font-text text-xs text-white">Made with <span role="img" aria-label="heart">💛</span> in Colombia</p>
     </div>
   </footer>
-);
+)
 
-export default Footer;
+export default Footer

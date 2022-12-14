@@ -1,73 +1,101 @@
-import Layout  from '../components/layout';
-import PropTypes from "prop-types";
-import React from 'react';
-import SEO from '../components/seo';
-import ViewCounter from "../components/ViewCounter";
-import { graphql, Link } from "gatsby";
+import * as React from "react"
+import { Link, graphql } from "gatsby"
+import Layout from "../components/Layout"
+import Seo from "../components/Seo"
+import Author from "../components/Author"
 
 const BlogPostTemplate = ({
-  data: { markdownRemark: { frontmatter, html }},
-  pageContext: { next, previous, slug }, location 
+  data: { previous, next, site, markdownRemark: { frontmatter, html } },
+  location,
 }) => {
-  const { date, description, title } = frontmatter;
+  const siteTitle = site.siteMetadata?.title
+  const { date, title } = frontmatter
 
   return (
-    <Layout location={ location }>
-      <SEO title={ title } description={ description } />
-      <article className="container mx-auto px-4 lg:px-64">
-        <div className="mb-24">
+    <Layout location={ location } title={siteTitle}>
+      <article className="container mx-auto px-4 lg:px-64 mb-16" itemScope itemType="http://schema.org/Article">
+        <div className="mb-8">
           <header className="mb-8">
-            <h1 className="border-b border-gray-200 font-black font-header text-4xl">{ title }</h1>
+            <h1 className="border-b border-gray-200 font-black font-header pb-2 text-4xl" itemProp="headline">{ title }</h1>
             <div className="flex justify-between pt-4">
               <time className="font-text text-xs">{ date }</time>
-              <ViewCounter id={ slug } />
             </div>
           </header>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <div dangerouslySetInnerHTML={{ __html: html }} itemProp="articleBody" />
         </div>
-        <div className="my-8">
-          <ul className="flex justify-between">
-            <li>
-              {previous && (
-                <Link className="bg-blue p-1 text-white" to={ previous.fields.slug } rel="prev">
-                  ← { previous.frontmatter.title }
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link className="bg-blue p-1 text-white" to={ next.fields.slug } rel="next">
-                  { next.frontmatter.title } →
-                </Link>
-              )}
-            </li>
-          </ul>
-        </div>
+        <Author />
+        <ul className="flex justify-between">
+          <li>
+            {previous && (
+              <Link className="bg-blue p-1 text-white" to={ previous.fields.slug } rel="prev">
+                ← { previous.frontmatter.title }
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link className="bg-blue p-1 text-white" to={ next.fields.slug } rel="next">
+                { next.frontmatter.title } →
+              </Link>
+            )}
+          </li>
+        </ul>
       </article>
     </Layout>
-  );
-};
+  )
+}
 
-BlogPostTemplate.propTypes = {
-  pageContext: PropTypes.object
-};
+export const Head = ({ data: { markdownRemark: post } }) => {
 
-export default BlogPostTemplate;
+  return (
+    <Seo
+      title={post.frontmatter?.title}
+      description={post.frontmatter?.description || post.excerpt}
+      keywords={post.frontmatter?.tags}
+    >
+      {post.frontmatter?.tags && <meta name="keywords" content={post.frontmatter?.tags.join(', ')} />}
+    </Seo>
+  )
+}
+
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostBySlug(
+    $id: String!
+    $previousPostId: String
+    $nextPostId: String
+  ) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(id: { eq: $id }) {
       id
+      excerpt(pruneLength: 160)
       html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
+      }
+    }
+    previous: markdownRemark(id: { eq: $previousPostId }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+      }
+    }
+    next: markdownRemark(id: { eq: $nextPostId }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
       }
     }
   }
