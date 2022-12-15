@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react'
 import { FaGithub, FaLinkedinIn, FaMapMarkerAlt, FaRss} from 'react-icons/fa'
 
 const Bio = () => (
