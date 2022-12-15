@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby'
 import Bio from '../components/Bio'
 import Layout  from '../components/layout'
 import Pagination from '../components/Pagination'
-import Seo from '../components/Seo'
+import Seo from '../components/seo'
 
 const BlogIndex = ({ 
   pageContext: { currentPage, limit, numPages, numPosts },
