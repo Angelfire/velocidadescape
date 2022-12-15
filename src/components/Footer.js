@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const Footer = () => (
   <footer className="bg-gray-900 pt-8 pb-16">
-    <div className="container flex justify-between mx-auto">
+    <div className="container flex flex-col md:flex-row md:justify-between mx-auto px-4 md:px-0">
       <p className="font-text text-xs text-white">{new Date().getFullYear()} @Copyleft - All Wrongs Reserved</p>
       <p className="font-text text-xs text-white">Made with <span role="img" aria-label="heart">💛</span> in Colombia</p>
     </div>
