@@ -5,12 +5,12 @@ const Bio = () => (
   <aside className="w-full lg:w-1/3 lg:border-r border-line lg:px-8 xl:px-12">
     <div className="flex flex-col h-full justify-between">
       <div>
-        <h3 className="font-header font-light text-2xl leading-none mb-4">
-          Web Developer
-        </h3>
-        <h2 className="font-header font-black text-5xl leading-none break-words mb-6">
-          Andrés Bedoya G.
+        <h2 className="font-header font-light text-2xl leading-none mb-4">
+          JavaScript Software Engineer
         </h2>
+        <h3 className="font-header font-black text-4xl leading-none break-words mb-6">
+          Andrés Bedoya G.
+        </h3>
         <div className="inline-flex items-center bg-front mt-6 w-auto">
           <span className="bg-blue text-white mr-1 pt-1 pb-1 px-2">
             <FaMapMarkerAlt className="h-6 w-6" />
