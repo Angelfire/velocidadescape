@@ -1,8 +1,8 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
-import Layout from "../components/Layout"
-import Seo from "../components/Seo"
-import Author from "../components/Author"
+import * as React from 'react'
+import { Link, graphql } from 'gatsby'
+import Layout from '../components/Layout'
+import Seo from '../components/Seo'
+import Author from '../components/Author'
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: { frontmatter, html } },

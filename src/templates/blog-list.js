@@ -1,7 +1,7 @@
-import * as React from "react"
+import * as React from 'react'
 import { graphql, Link } from 'gatsby'
 import Bio from '../components/Bio'
-import Layout  from '../components/Layout'
+import Layout  from '../components/layout'
 import Pagination from '../components/Pagination'
 import Seo from '../components/Seo'
 
