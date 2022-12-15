@@ -141,7 +141,7 @@ module.exports = {
         short_name: `VE`,
         start_url: `/`,
         background_color: `#e8eaef`,
-        theme_color: `#663399`,
+        theme_color: `#3273dc`,
         display: `minimal-ui`,
         icon: `src/images/ve-icon.png`,
       },
