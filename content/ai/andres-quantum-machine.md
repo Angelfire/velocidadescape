@@ -3,7 +3,7 @@ date: "2023-01-16"
 title: "Andrés and the Quantum Machine"
 description: "A short sci-fi story written by OpenAI titled Andrés and the Quantum Machine"
 author: "Andres Bedoya"
-tags: ["Personal"]
+tags: ["Personal", "AI"]
 ---
 
 I was playing a bit with the OpenAI playground, fine-tuning the prompts a bit in such a way that the AI would give me interesting results.
