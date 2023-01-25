@@ -3,7 +3,7 @@ date: "2020-06-25"
 title: "Are computer generated random numbers really random?"
 description: "Are computer generated random numbers really random?"
 author: "Andres Bedoya"
-tags: ["Computer Science"]
+tags: ["CS"]
 ---
 
 This morning I couldn't sleep, so I remembered something interesting, computer generated random numbers are not really random numbers, or not strictly speaking.
