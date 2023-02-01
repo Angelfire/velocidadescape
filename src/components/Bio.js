@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { FaGithub, FaLinkedinIn, FaMapMarkerAlt, FaRss} from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaMapMarkerAlt, FaRss, FaTwitter } from 'react-icons/fa'
 
 const Bio = () => (
   <aside className="w-full lg:w-1/3 lg:border-r border-line lg:px-8 xl:px-12">
@@ -50,6 +50,16 @@ const Bio = () => (
           title="Rss Feed for Velocidad de Escape"
         >
           <FaRss className="h-6 w-6" />
+        </a>
+        <a
+          aria-label="Twitter account"
+          className="bg-white h-12 inline-flex items-center justify-center -m-1 rounded-full w-12"
+          href="https://twitter.com/MonsieurHart"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Linkedin account"
+        >
+          <FaTwitter className="h-6 w-6" />
         </a>
       </footer>
     </div>
