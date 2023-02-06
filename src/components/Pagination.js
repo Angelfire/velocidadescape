@@ -31,7 +31,7 @@ const Pagination = ({ currentPage, limit, numPages, numPosts  }) => {
         </li>
       )}
     </ul>
-  );
+  )
 }
 
 export default Pagination

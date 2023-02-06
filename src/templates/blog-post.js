@@ -16,7 +16,7 @@ const BlogPostTemplate = ({
       <article className="container mx-auto px-4 lg:px-64 mb-16" itemScope itemType="http://schema.org/Article">
         <div className="mb-8">
           <header className="mb-8">
-            <h1 className="border-b border-gray-200 font-black font-header pb-2 text-4xl" itemProp="headline">{ title }</h1>
+            <h1 className="border-b border-gray-200 font-bold font-header pb-2 text-4xl" itemProp="headline">{ title }</h1>
             <div className="flex justify-between pt-4">
               <time className="font-text text-xs">{ date }</time>
             </div>
@@ -72,7 +72,6 @@ export const pageQuery = graphql`
     }
     markdownRemark(id: { eq: $id }) {
       id
-      excerpt(pruneLength: 160)
       html
       frontmatter {
         title

@@ -14,21 +14,24 @@ const BlogIndex = ({
     <div className="container mx-auto px-4 md:px-0 mb-16">
       <div className="flex flex-wrap pt-4">
         <Bio />
-        <div className="w-full lg:w-2/3 lg:pl-8 xl:pl-12">
+        <div className="w-full lg:w-3/4 lg:pl-8 xl:pl-12">
           <section>
             {edges.map(({ node }) => {
-              const { date,  title } = node.frontmatter;
-              const { slug } = node.fields;
+              const { date, title, tags } = node.frontmatter
+              const { slug } = node.fields
 
               return (
-                <article key={ node.id } className="mb-8">
-                  <header className="mb-4">
-                    <h2 className="font-black font-header text-3xl">
+                <article key={ node.id } className="mb-12">
+                  <header className="border-b border-dashed border-black flex items-end gap-6 pb-1 mb-4">
+                    <time className="font-text pb-1 text-xs" dateTime={date}>{ date }</time>
+                    <h2 className="font-bold font-header text-3xl hover:from-pink-600 hover:bg-clip-text hover:bg-gradient-to-r hover:text-transparent hover:to-sky-600">
                       <Link to={ slug }>{ title }</Link>
                     </h2>
-                    <time className="font-text text-xs">{ date }</time>
                   </header>
-                  <p className="font-text">{ node.excerpt }</p>
+                  <p className="font-text mb-4">{ node.excerpt }</p>
+                  <div className="flex justify-end gap-4">
+                    {tags.map(tag => <p className="bg-black px-2 py-1 text-white text-sm">{tag}</p>)}
+                  </div>
                 </article>
               );
             })}
@@ -65,13 +68,14 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt
+          excerpt(pruneLength: 210)
           fields {
             slug
           }
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            tags
           }
         }
       }

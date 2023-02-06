@@ -3,7 +3,7 @@ date: "2022-03-03"
 title: "Protected routes and authorization using React Router v6"
 description: "How to: Protect routes based on authorization using React Router v6"
 author: "Andres Bedoya"
-tags: ["React, React-Router"]
+tags: ["React", "React-Router"]
 ---
 
 In the project I am currently working on, a specific need arose, we should protect certain routes of a web application from certain user roles (for security reasons). For example, we have a page where administrators can add and delete users, this power can only be held by us (this must be a private page).

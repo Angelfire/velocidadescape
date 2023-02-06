@@ -9,7 +9,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <div data-is-root-path={isRootPath}>
       <Header title={title} isRootPath={isRootPath} />
-      <main>{children}</main>
+      <main className="flex flex-1 flex-col mt-12 w-full">{children}</main>
       {isRootPath && <Footer /> }
     </div>
   )
