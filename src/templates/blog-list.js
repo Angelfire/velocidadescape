@@ -1,17 +1,20 @@
-import * as React from 'react'
-import { graphql, Link } from 'gatsby'
-import Bio from '../components/Bio'
-import Layout  from '../components/layout'
-import Pagination from '../components/Pagination'
-import Seo from '../components/seo'
+import * as React from "react"
+import { graphql, Link } from "gatsby"
+import Bio from "../components/Bio"
+import Layout from "../components/layout"
+import Pagination from "../components/Pagination"
+import Seo from "../components/seo"
 
-const BlogIndex = ({ 
+const BlogIndex = ({
   pageContext: { currentPage, limit, numPages, numPosts },
-  data: { allMarkdownRemark: { edges }, site},
-  location
+  data: {
+    allMarkdownRemark: { edges },
+    site,
+  },
+  location,
 }) => (
-  <Layout location={ location } title={site.siteMetadata?.title}>
-    <div className="container mx-auto px-4 md:px-0 mb-16">
+  <Layout location={location} title={site.siteMetadata?.title}>
+    <div className="container mx-auto mb-16 px-4 md:px-0">
       <div className="flex flex-wrap pt-4">
         <Bio />
         <div className="w-full lg:w-3/4 lg:pl-8 xl:pl-12">
@@ -21,26 +24,32 @@ const BlogIndex = ({
               const { slug } = node.fields
 
               return (
-                <article key={ node.id } className="mb-12">
-                  <header className="border-b border-dashed border-black flex items-end gap-6 pb-1 mb-4">
-                    <time className="font-text pb-1 text-xs" dateTime={date}>{ date }</time>
-                    <h2 className="font-bold font-header text-3xl hover:from-pink-600 hover:bg-clip-text hover:bg-gradient-to-r hover:text-transparent hover:to-sky-600">
-                      <Link to={ slug }>{ title }</Link>
+                <article key={node.id} className="mb-12">
+                  <header className="mb-4 flex items-end gap-6 border-b border-dashed border-black pb-1">
+                    <time className="font-text pb-1 text-xs" dateTime={date}>
+                      {date}
+                    </time>
+                    <h2 className="font-header text-3xl font-bold hover:bg-gradient-to-r hover:from-pink-600 hover:to-sky-600 hover:bg-clip-text hover:text-transparent">
+                      <Link to={slug}>{title}</Link>
                     </h2>
                   </header>
-                  <p className="font-text mb-4">{ node.excerpt }</p>
+                  <p className="font-text mb-4">{node.excerpt}</p>
                   <div className="flex justify-end gap-4">
-                    {tags.map(tag => <p className="bg-black px-2 py-1 text-white text-sm">{tag}</p>)}
+                    {tags.map(tag => (
+                      <p className="bg-black px-2 py-1 text-sm text-white">
+                        {tag}
+                      </p>
+                    ))}
                   </div>
                 </article>
-              );
+              )
             })}
           </section>
           <Pagination
-            currentPage={ currentPage }
-            limit={ limit }
-            numPages={ numPages }
-            numPosts={ numPosts }
+            currentPage={currentPage}
+            limit={limit}
+            numPages={numPages}
+            numPosts={numPosts}
           />
         </div>
       </div>
@@ -55,7 +64,7 @@ export default BlogIndex
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
- export const Head = () => <Seo />
+export const Head = () => <Seo />
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
@@ -64,7 +73,11 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: $limit, skip: $skip) {
+    allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      limit: $limit
+      skip: $skip
+    ) {
       edges {
         node {
           id
