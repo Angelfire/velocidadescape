@@ -28,17 +28,17 @@ const Author = () => {
 
   return (
     <div className="mb-16 flex border-t border-gray-200 pt-2">
-      <StaticImage
-        className="mr-4"
-        layout="fixed"
-        formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
-        width={99}
-        height={99}
-        quality={95}
-        alt="Andrés Bedoya Profile picture"
-      />
-      <div>
+      <div className="mr-4 w-1/5 sm:mr-0 sm:w-[15%]">
+        <StaticImage
+          formats={["auto", "webp", "avif"]}
+          src="../images/profile-pic.png"
+          width={99}
+          height={99}
+          quality={95}
+          alt="Andrés Bedoya Profile picture"
+        />
+      </div>
+      <div className="w-4/5 sm:w-[85%]">
         <p>
           Written by <strong>{author?.name}</strong>
         </p>

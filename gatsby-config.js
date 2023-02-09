@@ -13,7 +13,7 @@ module.exports = {
     title: `Velocidad de Escape`,
     author: {
       name: `Andrés Bedoya`,
-      summary: `Andrés Bedoya is a JavaScript software engineer, internet enthusiast and blogger from an early age. He strongly believes in the free culture. He lives in Medellín, Colombia.`,
+      summary: `Andrés Bedoya is a JavaScript software engineer, internet enthusiast and blogger from an early age. He strongly believes in the free culture.`,
     },
     description: `Personal blog by Andrés Bedoya. I just want to share some personal things and others related to the headaches that programming produces.`,
     siteUrl: `https://velocidadescape.com`,
