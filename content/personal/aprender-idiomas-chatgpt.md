@@ -10,7 +10,7 @@ ChatGPT puede ser una gran herramienta para aprender idiomas, y no, no se trata 
 
 Los límites literalmente están en tu mente, porque las posibilidades son casi infinitas...
 
-Por otro lado y como lo mencioné en una publicación anterior, en ChatGPT la manera en cómo escribes tus prompts es muy importante. En este artículo puede leer un poco [cómo escribir prompts de la manera correcta]((../../ai/art-writing-first-prompt-openai)).
+Por otro lado y como lo mencioné en una publicación anterior, en ChatGPT la manera en cómo escribes tus prompts es muy importante. En este artículo puede leer un poco [cómo escribir prompts de la manera correcta](https://velocidadescape.com/ai/art-writing-first-prompt-openai/).
 
 Estas son algunas de las maneras que puedes usar ChatGPT para aprender un idioma:
 
