@@ -3,7 +3,10 @@
   "private": true,
   "description": "Personal blog by Andrés Bedoya",
   "version": "2.0",
-  "author": "Andres Bedoya <bedoya.andres@pm.me>",
+  "author": {
+    "name": "Andres Bedoya",
+    "url": "https://srhart.co/"
+  },
   "dependencies": {
     "gatsby": "^5.5.0",
     "gatsby-plugin-feed": "^5.2.0",
@@ -47,7 +50,6 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   }
 }
