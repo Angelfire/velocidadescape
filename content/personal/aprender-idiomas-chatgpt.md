@@ -45,7 +45,7 @@ Al igual que en el punto anterior podrías simplemente tener una conversación c
 ## Hacer preguntas sobre gramática y vocabulario
 
 Puedes hacerle preguntas sobre la gramática y el vocabulario del idioma que estás aprendiendo y obtener respuestas detalladas y precisas.
+ 
+_Es importante recordar que aunque ChatGPT está entrenado en muchos idiomas, puede haber errores o limitaciones en su conocimiento de algunos idiomas menos conocidos o menos utilizados. Por lo tanto, es importante complementar tu aprendizaje con otras fuentes y materiales didácticos._
 
-> Es importante recordar que aunque ChatGPT está entrenado en muchos idiomas, puede haber errores o limitaciones en su conocimiento de algunos idiomas menos conocidos o menos utilizados. Por lo tanto, es importante complementar tu aprendizaje con otras fuentes y materiales didácticos.
-
-La inspiración para este post fue _Xavier Mitjana_ gracias a su video en Youtube <a class="hover:no-underline text-blue underline" href="https://www.youtube.com/watch?v=FTp7xo_WefM" target="_blank" rel="noopener noreferrer">Cómo APRENDER IDIOMAS con Inteligencia Artificial GRATIS 🚀 Tutorial ChatGPT</a>
+La inspiración para este post fue _Xavier Mitjana_ y su video en Youtube <a class="hover:no-underline text-blue underline" href="https://www.youtube.com/watch?v=FTp7xo_WefM" target="_blank" rel="noopener noreferrer">Cómo APRENDER IDIOMAS con Inteligencia Artificial GRATIS 🚀 Tutorial ChatGPT</a>
