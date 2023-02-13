@@ -43,24 +43,24 @@ const BlogPostTemplate = ({
         <Author />
         <ul className="flex justify-between">
           <li>
-            {previous && (
-              <Link
-                className="bg-blue p-1 text-white"
-                to={previous.fields.slug}
-                rel="prev"
-              >
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
             {next && (
               <Link
                 className="bg-blue p-1 text-white"
                 to={next.fields.slug}
                 rel="next"
               >
-                {next.frontmatter.title} →
+                ← {next.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {previous && (
+              <Link
+                className="bg-blue p-1 text-white"
+                to={previous.fields.slug}
+                rel="prev"
+              >
+                {previous.frontmatter.title} →
               </Link>
             )}
           </li>
