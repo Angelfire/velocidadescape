@@ -44,7 +44,7 @@ It seemed logical and simple... Why wouldn't it work?
 
 Spoiler, It didn't work...
 
-I tried many things, but in the end I had to open a <a class="hover:no-underline text-blue underline" href="(https://github.com/tailwindlabs/tailwindcss/discussions/10574" target="_blank" rel="noopener noreferrer">discussion in Github</a>, the first answer was very interesting:
+I tried many things, but in the end I had to open a <a class="hover:no-underline text-blue underline" href="https://github.com/tailwindlabs/tailwindcss/discussions/10574" target="_blank" rel="noopener noreferrer">discussion in Github</a>, the first answer was very interesting:
 
 >The most important implication of how Tailwind extracts class names is that it will only find classes that exist as complete unbroken strings in your source files.
 
