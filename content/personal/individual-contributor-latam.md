@@ -1,7 +1,7 @@
 ---
 title: "Being an Individual contributor in LATAM"
 slug: "personal/individual-contributor-latam"
-pubDate: "2023-03-01"
+date: "2023-03-01"
 description: "It is impossible to be an individual contributor in Latam"
 author: "Andres Bedoya"
 tags: ["Personal"]
